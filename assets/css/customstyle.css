@@ -1,0 +1,278 @@
+/* for FAQ section */
+summary {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #85c4da;
+  color: #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0; margin-top: -10px}
+  100%  {opacity: 1; margin-top: 0px}
+}
+details > summary::after {
+  position: absolute;
+  content: "+";
+  right: 20px;
+}
+details[open] > summary::after {
+  position: absolute;
+  content: "-";
+  right: 20px;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* end of FAQ section */
+
+/* Table section */
+.styled-table1 {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.styled-table1 caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+.styled-table1 tr {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+.styled-table1 th,
+.styled-table1 td {
+  padding: .625em;
+  text-align: center;
+}
+
+.styled-table1 th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  color: #ffffff;
+  background-color: #009879;
+}
+
+.styled-table1 tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table1 tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table1 tbody tr.active-row {
+    color: #008000;
+    background-color: #FFFFEE;
+}
+
+@media screen and (max-width: 600px) {
+  .styled-table1 {
+    border: 0;
+  }
+
+  .styled-table1 caption {
+    font-size: 1.3em;
+  }
+  
+  .styled-table1 thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .styled-table1 tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  .styled-table1 td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  .styled-table1 td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    color: #009879;
+  }
+  
+  .styled-table1 td:last-child {
+    border-bottom: 0;
+  }
+}
+
+.pred{
+  color: red;
+}
+
+.pgreen{
+  color: green;
+}
+
+.pbrown{
+  color: brown;
+}
+
+/* from barcodes */
+
+input[type=text], input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #059862;
+}
+
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+.button:hover {
+  background-color: #059862;
+}
+label {
+  font-weight: bold;
+}
+
+/* Info Box */
+.yellow-infobox{
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #FFF8E6;
+  border-radius:5px;
+  color: #4D3800;
+  border: solid 1px #E6A700;
+} 
+.blue-infobox{
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #EEF9FD;
+  border-radius:5px;
+  color: #193C48;
+  border: solid 1px #4CB3D4;
+} 
+.green-infobox{
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #E6F6E6;
+  border-radius:5px;
+  border: solid 1px #009400;
+  color: #003100;
+} 
+.red-infobox{
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #FFEBEC;
+  border-radius:5px;
+  border: solid 1px #E13238;
+  color: #4B1113;
+} 
+.gold-infobox{
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #fbfaf4;
+  border-radius:5px;
+  border: solid 1px #bf9b30;
+  color: #755e1d;
+} 
+
+.lastmodified{
+  font-size: 12px;
+  text-align: right;
+  color: #808080;
+}
+
+.back-to-top {
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	flex: 0 0 50px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 52px;
+	width: 50px;
+	height: 50px;
+	background-color: #002d5f;
+	color: #ffffff;
+	font-size: 2.6rem;
+}
+.back-to-top .material-icons {
+  font-size: inherit;
+  position: relative;
+  top: 7px; /*Change this to adjust the icon*/
+  color: #ffffff;
+}
+.bttcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.editpage{
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 1em;  
+  
+}
+.editpage a{ 
+  color: #0645AD;
+}
+.editpage a:hover {
+	color: #04AA6D;
+}
+.editpage .material-icons{
+  margin-right: .3em;
+  vertical-align: sub;
+  font-size: 18px;
+}
+
