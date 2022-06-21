@@ -333,10 +333,23 @@ Make sure address alignment is correct on generated pdf.
 </select>
 <h2 id="add-barcodes">Add Barcodes?</h2>
 <h4 id="select-if-you-want-to-add-barcodes-to-cover-letter-or-not-default-option-no">Select if you want to add barcodes to cover letter or not (default option, No)</h4>
-<p>This will add A Number and I-485 receipt number barcodes.
-<select id="barcodeoptions" class="selectbox"></p>
-<option value="yesbarcode">Yes</option>
-<option value="nobarcode" selected>No</option>
+<p>This will add A Number and I-485 receipt number barcodes. There are six options to print barcodes on cover letter at the top.</p>
+<ul>
+<li>print medium barcodes (default): Prints &quot;USCIS A Number&quot; and &quot;I-485 receipt number&quot; names for respective barcodes.</li>
+<li>print medium barcodes without names: Prints  <strong>without</strong> USCIS A Number and I-485 receipt number names on top.</li>
+<li>print small barcodes: These barcodes height is little smaller than medium size barcodes.</li>
+<li>print small barcodes without names: Prints <strong>without</strong> USCIS A Number and I-485 receipt number names on top.</li>
+<li>print large barcodes: These barcodes height is little bigger than medium size barcodes.</li>
+<li>print large barcodes without names: Prints <strong>without</strong> USCIS A Number and I-485 receipt number names on top.</li>
+</ul>
+<select id="barcodeoptions" class="selectbox">
+<option value="yesmediumbarcode">Yes, print medium barcodes (default)</option>
+<option value="yesmediumnonamebarcode">Yes, print medium barcodes without names</option>
+<option value="yessmallbarcode">Yes, print small barcodes</option>
+<option value="yessmallnonamebarcode">Yes, print small barcodes without names</option>
+<option value="yeslargebarcode">Yes, print large barcodes</option>
+<option value="yeslargenonamebarcode">Yes, print large barcodes without names</option>
+<option value="nobarcode" selected>No barcodes</option>
 </select>
 <div hidden>
 <img id="anumbarcode"/>
@@ -373,6 +386,7 @@ menuToggle.addEventListener('click', function(ev) {
 </script>
 
 <script src="/assets/js/common.min.js"></script>
+<script src="/assets/js/common2.min.js"></script>
 <script src="/assets/js/eb3toeb2interfile.min.js"></script>
 
   	
