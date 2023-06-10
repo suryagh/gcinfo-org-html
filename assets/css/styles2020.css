@@ -224,7 +224,7 @@ a.main-nav-link-separate {
 	position: absolute;
 	top: 0;
 	left: 0;
-	content: "article";
+	content: "menu_open";
 	height: 1.5rem;
 	width: 1.5rem;
 	font: normal 1.5rem 'Material Icons';

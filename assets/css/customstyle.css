@@ -303,3 +303,48 @@ label {
   margin-bottom: 20px;
   background-color: #f5f5f5;
 }
+
+.cs-tick-mark {
+  list-style-type: none;
+}
+
+.cs-tick-mark li::before {
+  font-family: "Material Icons";
+  content: "\e86c";
+  display: inline-block;
+  color: #0AB059;
+  font-weight: bold;
+  vertical-align: bottom;
+  margin-left: -1.4em;
+  margin-right: 0.4em;  
+}
+
+.cs-cross-mark {
+  list-style-type: none;
+}
+
+.cs-cross-mark li::before {
+  font-family: "Material Icons";
+  content: "\e5c9";
+  display: inline-block;
+  color: #F15E64;
+  font-weight: bold;
+  vertical-align: bottom;
+  margin-left: -1.4em;
+  margin-right: 0.4em;  
+}
+
+.cs-pdf-mark {
+  list-style-type: none;
+}
+
+.cs-pdf-mark li::before {
+  font-family: "Material Icons";
+  content: "\e415";
+  display: inline-block;
+  color: #CB0606;
+  font-weight: bold;
+  vertical-align: bottom;
+  margin-left: -1.4em;
+  margin-right: 0.4em;  
+}
