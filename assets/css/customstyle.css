@@ -304,11 +304,11 @@ label {
   background-color: #f5f5f5;
 }
 
-.cs-tick-mark {
+.cs-check-mark {
   list-style-type: none;
 }
 
-.cs-tick-mark li::before {
+.cs-check-mark li::before {
   font-family: "Material Icons";
   content: "\e86c";
   display: inline-block;
